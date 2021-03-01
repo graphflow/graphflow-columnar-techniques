@@ -1,0 +1,10 @@
+{
+	"queries" : [
+		{
+			"name": "q10.",
+			"query": "MATCH (t:title)-[hc:hasCompany]->(c:company), (t:title)-[hcs:hasCast]->(n:name) RETURN t",
+			"execute": true,
+			"planIdx": -1
+		}
+	]
+}

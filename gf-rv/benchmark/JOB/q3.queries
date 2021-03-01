@@ -1,0 +1,10 @@
+{
+	"queries" : [
+		{
+			"name": "q3.",
+			"query": "MATCH (t:title)-[hk:hasKeyword]->(k:keyword), (t:title)-[hmi:hasMovieInfo]->(mi1:movieInfo1) WHERE k.keyword CONTAINS 'sequel' RETURN t",
+			"execute": true,
+			"planIdx": -1
+		}
+	]
+}

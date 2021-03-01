@@ -1,0 +1,35 @@
+{
+	"queries" : [
+		{
+			"name": "5-hop count, src 0, plan 62",
+			"query": "MATCH (a1:PERSON)-[e1:KNOWS]->(a2:PERSON), (a2:PERSON)-[e2:KNOWS]->(a3:PERSON), (a3:PERSON)-[e3:KNOWS]->(a4:PERSON), (a4:PERSON)-[e4:KNOWS]->(a5:PERSON), (a5:PERSON)-[e5:KNOWS]->(a6:PERSON) WHERE a1.manualID = 0 RETURN count(*)",
+			"execute": true,
+			"planIdx": 62
+		}, {
+			"name": "5-hop count, src 0, plan 63",
+			"query": "MATCH (a1:PERSON)-[e1:KNOWS]->(a2:PERSON), (a2:PERSON)-[e2:KNOWS]->(a3:PERSON), (a3:PERSON)-[e3:KNOWS]->(a4:PERSON), (a4:PERSON)-[e4:KNOWS]->(a5:PERSON), (a5:PERSON)-[e5:KNOWS]->(a6:PERSON) WHERE a1.manualID = 0 RETURN count(*)",
+			"execute": false,
+			"planIdx": 63
+		}, {
+			"name": "5-hop count, src 1053, plan 62",
+			"query": "MATCH (a1:PERSON)-[e1:KNOWS]->(a2:PERSON), (a2:PERSON)-[e2:KNOWS]->(a3:PERSON), (a3:PERSON)-[e3:KNOWS]->(a4:PERSON), (a4:PERSON)-[e4:KNOWS]->(a5:PERSON), (a5:PERSON)-[e5:KNOWS]->(a6:PERSON) WHERE a1.manualID = 1053 RETURN count(*)",
+			"execute": true,
+			"planIdx": 62
+		}, {
+			"name": "5-hop count, src 1053, plan 63",
+			"query": "MATCH (a1:PERSON)-[e1:KNOWS]->(a2:PERSON), (a2:PERSON)-[e2:KNOWS]->(a3:PERSON), (a3:PERSON)-[e3:KNOWS]->(a4:PERSON), (a4:PERSON)-[e4:KNOWS]->(a5:PERSON), (a5:PERSON)-[e5:KNOWS]->(a6:PERSON) WHERE a1.manualID = 1053 RETURN count(*)",
+			"execute": true,
+			"planIdx": 63
+		}, {
+			"name": "5-hop count, src 406847, plan 62",
+			"query": "MATCH (a1:PERSON)-[e1:KNOWS]->(a2:PERSON), (a2:PERSON)-[e2:KNOWS]->(a3:PERSON), (a3:PERSON)-[e3:KNOWS]->(a4:PERSON), (a4:PERSON)-[e4:KNOWS]->(a5:PERSON), (a5:PERSON)-[e5:KNOWS]->(a6:PERSON) WHERE a1.manualID = 406847 RETURN count(*)",
+			"execute": true,
+			"planIdx": 62
+		}, {
+			"name": "5-hop count, src 406847, plan 63",
+			"query": "MATCH (a1:PERSON)-[e1:KNOWS]->(a2:PERSON), (a2:PERSON)-[e2:KNOWS]->(a3:PERSON), (a3:PERSON)-[e3:KNOWS]->(a4:PERSON), (a4:PERSON)-[e4:KNOWS]->(a5:PERSON), (a5:PERSON)-[e5:KNOWS]->(a6:PERSON) WHERE a1.manualID = 406847 RETURN count(*)",
+			"execute": true,
+			"planIdx": 63
+		}
+	]
+}

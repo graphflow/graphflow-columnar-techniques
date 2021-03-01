@@ -1,0 +1,15 @@
+{
+	"queries" : [
+		{
+			"name": "q2.",
+			"query": "MATCH (p:person)-[:knows]->(p2:person), (p:person)-[:knows]->(friend:person), (pst:post)-[:hasCreator]->(friend:person), (pst:post)-[:hasTag]->(tg:tag) WHERE p = 0 AND pst.creationDate >= 1313591219 AND pst.creationDate <= 1513591219 RETURN tg.name",
+			"execute": true,
+			"planIdx": 10
+		},{
+			"name": "q2.",
+			"query": "MATCH (p1:person)-[:knows]->(friend:person), (message:comment)-[hc1:hasCreator]->(friend:person) WHERE p1 = 0 return *",
+			"execute": false,
+			"planIdx": 0
+		}
+	]
+}

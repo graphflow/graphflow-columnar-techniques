@@ -1,0 +1,20 @@
+{
+	"queries" : [
+		{
+			"name": "q1.",
+			"query": "MATCH (p0:person)-[:knows]->(p1:person),(p1:person)-[:knows]->(p2:person),(p2:person)-[:knows]->(op:person),(op:person)-[:isLocatedIn]->(city:place) WHERE p0 = 0 and op.fName = 'Rahul' RETURN op, op.lName, op.birthday, op.creationDate, op.gender, op.locationIP, city.name",
+			"execute": false,
+			"planIdx": 14
+		},{
+			"name": "q1.",
+			"query": "MATCH (p0:person)-[:knows]->(p1:person),(p1:person)-[:knows]->(p2:person),(p2:person)-[:knows]->(op:person),(op:person)-[:isLocatedIn]->(city:place) WHERE p0 = 0 and op.fName = 'Rahul' RETURN p0",
+			"execute": true,
+			"planIdx": 14
+		},{
+			"name": "q1.",
+			"query": "MATCH (p0:person)-[:knows]->(p1:person),(p1:person)-[:knows]->(p2:person),(p2:person)-[:knows]->(otherPerson:person),(otherPerson:person)-[:isLocatedIn]->(city:place) WHERE p0 = 0 RETURN *",
+			"execute": false,
+			"planIdx": 10
+		}
+	]
+}

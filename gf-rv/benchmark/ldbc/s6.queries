@@ -1,0 +1,15 @@
+{
+	"queries" : [
+		{
+			"name": "q6.",
+			"query": "MATCH (cmt:comment)-[:replyOf]->(pst:post), (f:forum)-[:containerOf]->(pst:post), (f:forum)-[:hasModerator]->(p:person) WHERE cmt = 0 return f, f.title, p, p.fName, p.lName",
+			"execute": true,
+			"planIdx": 3
+		},{
+			"name": "q6.",
+			"query": "MATCH (cmt:comment)-[:replyOf]->(pst:post), (f:forum)-[:containerOf]->(pst:post), (f:forum)-[:hasModerator]->(p:person) return *",
+			"execute": false,
+			"planIdx": 3
+		}
+	]
+}

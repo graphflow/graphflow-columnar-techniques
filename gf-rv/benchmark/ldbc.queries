@@ -1,0 +1,25 @@
+{
+	"queries" : [
+		{
+			"name": "simple one-hop, plan 0",
+			"query": "MATCH (a:FORUM)-[e:HASMODERATOR]->(b:PERSON) RETURN *",
+			"execute": true,
+			"planIdx": 0
+		}, {
+			"name": "simple one-hop, plan 1",
+			"query": "MATCH (a:FORUM)-[e:HASMODERATOR]->(b:PERSON) RETURN *",
+			"execute": true,
+			"planIdx": 1
+		},{
+			"name": "simple one-hop, plan 2",
+			"query": "MATCH (a:FORUM)-[e:HASMODERATOR]->(b:PERSON) RETURN *",
+			"execute": true,
+			"planIdx": 2
+		},{
+			"name": "simple two-hop",
+			"query": "MATCH (a:FORUM)-[e1:HASMODERATOR]->(b:PERSON),(b:PERSON)-[e2:KNOWS]->(c:PERSON) RETURN *",
+			"execute": false,
+			"planIdx": 0
+		}
+	]
+}

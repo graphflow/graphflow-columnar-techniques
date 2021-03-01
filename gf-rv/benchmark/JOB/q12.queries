@@ -1,0 +1,10 @@
+{
+	"queries" : [
+		{
+			"name": "q12.",
+			"query": "MATCH (t:title)-[hmi1:hasMovieInfo]->(mi1:movieInfo1), (t:title)-[hc:hasCompany]->(c:company), (t:title)-[hmi2:hasMovieInfo]->(mi2:movieInfo2) WHERE c.countryCode = '[us]' RETURN t",
+			"execute": true,
+			"planIdx": -1
+		}
+	]
+}

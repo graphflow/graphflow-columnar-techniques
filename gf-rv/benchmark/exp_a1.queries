@@ -1,0 +1,20 @@
+{
+	"queries" : [
+		{
+			"name": "simple one-hop, plan 0",
+			"query": "MATCH (a:comment)-[e:replyOf]->(b:comment) RETURN *",
+			"execute": true,
+			"planIdx": 0
+		},{
+			"name": "simple one-hop, plan 0",
+			"query": "MATCH (a:comment)-[e1:replyOf]->(b:comment),(b:comment)-[e2:replyOf]->(c:comment) RETURN *",
+			"execute": true,
+			"planIdx": 0
+		},{
+			"name": "simple one-hop, plan 0",
+			"query": "MATCH (a:comment)-[e:replyOf]->(b:comment),(b:comment)-[e2:replyOf]->(c:comment),(c:comment)-[e3:replyOf]->(d:comment) RETURN *",
+			"execute": true,
+			"planIdx": 0
+		}
+	]
+}
