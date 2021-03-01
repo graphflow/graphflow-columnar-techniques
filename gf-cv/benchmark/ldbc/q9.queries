@@ -1,0 +1,15 @@
+{
+	"queries" : [
+		{
+			"name": "q6.",
+			"query": "MATCH (p0:person)-[:knows]->(p1:person), (p1:person)-[:knows]->(otherPerson:person), (cmt:comment)-[:hasCreator]->(otherPerson:person) WHERE p0 = 0 AND cmt.creationDate < 1342840042 return otherPerson, otherPerson.fName, otherPerson.lName, cmt, cmt.content, cmt.creationDate",
+			"execute": true,
+			"planIdx": 2
+		},{
+			"name": "q6.",
+			"query": "MATCH (p0:person)-[:knows]->(p1:person), (p1:person)-[:knows]->(otherPerson:person), (pst:comment)-[:hasCreator]->(otherPerson:person) WHERE p0 = 0 return *",
+			"execute": false,
+			"planIdx": 2
+		}
+	]
+}

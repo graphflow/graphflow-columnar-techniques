@@ -1,0 +1,15 @@
+{
+	"queries" : [
+		{
+			"name": "q6.",
+			"query": "MATCH (p:person)-[e:knows]->(friend:person) WHERE p = 0 return friend, friend.fName, friend.lName, e.year",
+			"execute": true,
+			"planIdx": 0
+		},{
+			"name": "q6.",
+			"query": "MATCH (p:person)-[:knows]->(friend:person) return *",
+			"execute": false,
+			"planIdx": 0
+		}
+	]
+}

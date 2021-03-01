@@ -1,0 +1,10 @@
+{
+	"queries" : [
+		{
+			"name": "q17.",
+			"query": "MATCH (t:title)-[hcs:hasCast]->(n:name), (t:title)-[hc:hasCompany]->(c:company), (t:title)-[hk:hasKeyword]->(k:keyword) WHERE k.keyword = 'character-name-in-title' RETURN t",
+			"execute": true,
+			"planIdx": -1
+		}	
+	]
+}

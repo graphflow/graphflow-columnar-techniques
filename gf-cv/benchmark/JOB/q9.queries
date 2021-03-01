@@ -1,0 +1,10 @@
+{
+	"queries" : [
+		{
+			"name": "q9.",
+			"query": "MATCH (t:title)-[hc:hasCompany]->(c:company), (t:title)-[hcs:hasCast]->(n:name), (n:name)-[han:hasAltName]->(an:altName) WHERE c.countryCode = '[us]' AND n.gender = 2 AND hcs.roleType = 2 RETURN t",
+			"execute": true,
+			"planIdx": -1
+		}
+	]
+}

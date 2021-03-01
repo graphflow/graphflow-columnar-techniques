@@ -1,0 +1,25 @@
+{
+	"queries" : [
+		{
+			"name": "simple one-hop, factorized forward",
+			"query": "MATCH (a:person)-[e:likes]->(b:comment) WHERE e.date >= 1300000000 RETURN count(*)",
+			"execute": true,
+			"planIdx": 1
+		},{
+			"name": "simple one-hop, factorized backward",
+			"query": "MATCH (a:person)-[e:likes]->(b:comment) WHERE e.date >= 1300000000 RETURN count(*)",
+			"execute": true,
+			"planIdx": 3
+		},{
+			"name": "simple one-hop, factorized forward",
+			"query": "MATCH (a:person)-[e:likes]->(b:comment) WHERE e.date >= 1300000000 RETURN count(*)",
+			"execute": true,
+			"planIdx": 0
+		},{
+			"name": "simple one-hop, factorized backward",
+			"query": "MATCH (a:person)-[e:likes]->(b:comment) WHERE e.date >= 1300000000 RETURN count(*)",
+			"execute": true,
+			"planIdx": 2
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"queries" : [
+		{
+			"name": "q18.",
+			"query": "MATCH (t:title)-[hmi1:hasMovieInfo]->(mi1:movieInfo1), (t:title)-[hmi2:hasMovieInfo]->(mi2:movieInfo2), (t:title)-[hcs:hasCast]->(n:name) RETURN t",
+			"execute": true,
+			"planIdx": -1
+		}	
+	]
+}

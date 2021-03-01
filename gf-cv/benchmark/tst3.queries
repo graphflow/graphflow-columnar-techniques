@@ -1,0 +1,65 @@
+{
+	"queries" : [
+		{
+			"name": "simple one-hop, factorized forward",
+			"query": "MATCH (a:person)-[e:knows]->(b:person), (b:person)-[f:knows]->(c:person) WHERE e.date < f.date  RETURN count(*)",
+			"execute": true,
+			"planIdx": 0
+		},{
+			"name": "simple one-hop, factorized forward",
+			"query": "MATCH (a:person)-[e:knows]->(b:person), (b:person)-[f:knows]->(c:person) WHERE e.date < f.date  RETURN count(*)",
+			"execute": false,
+			"planIdx": 1
+		},{
+			"name": "simple one-hop, factorized forward",
+			"query": "MATCH (a:person)-[e:knows]->(b:person), (b:person)-[f:knows]->(c:person) WHERE e.date < f.date  RETURN count(*)",
+			"execute": false,
+			"planIdx": 2
+		},{
+			"name": "simple one-hop, factorized forward",
+			"query": "MATCH (a:person)-[e:knows]->(b:person), (b:person)-[f:knows]->(c:person) WHERE e.date < f.date  RETURN count(*)",
+			"execute": false,
+			"planIdx": 3
+		},{
+			"name": "simple one-hop, factorized forward",
+			"query": "MATCH (a:person)-[e:knows]->(b:person), (b:person)-[f:knows]->(c:person) WHERE e.date < f.date  RETURN count(*)",
+			"execute": false,
+			"planIdx": 4
+		},{
+			"name": "simple one-hop, factorized forward",
+			"query": "MATCH (a:person)-[e:knows]->(b:person), (b:person)-[f:knows]->(c:person) WHERE e.date < f.date  RETURN count(*)",
+			"execute": false,
+			"planIdx": 5
+		},{
+			"name": "simple one-hop, factorized forward",
+			"query": "MATCH (a:person)-[e:knows]->(b:person), (b:person)-[f:knows]->(c:person) WHERE e.date < f.date  RETURN count(*)",
+			"execute": false,
+			"planIdx": 6
+		},{
+			"name": "simple one-hop, factorized forward",
+			"query": "MATCH (a:person)-[e:knows]->(b:person), (b:person)-[f:knows]->(c:person) WHERE e.date < f.date  RETURN count(*)",
+			"execute": false,
+			"planIdx": 7
+		},		{
+			"name": "simple one-hop, factorized forward",
+			"query": "MATCH (a:person)-[e:knows]->(b:person), (b:person)-[f:knows]->(c:person) WHERE e.date < f.date  RETURN count(*)",
+			"execute": true,
+			"planIdx": 8
+		},{
+			"name": "simple one-hop, factorized forward",
+			"query": "MATCH (a:person)-[e:knows]->(b:person), (b:person)-[f:knows]->(c:person) WHERE e.date < f.date  RETURN count(*)",
+			"execute": false,
+			"planIdx": 9
+		},{
+			"name": "simple one-hop, factorized forward",
+			"query": "MATCH (a:person)-[e:knows]->(b:person), (b:person)-[f:knows]->(c:person) WHERE e.date < f.date  RETURN count(*)",
+			"execute": false,
+			"planIdx": 10
+		},{
+			"name": "simple one-hop, factorized forward",
+			"query": "MATCH (a:person)-[e:knows]->(b:person), (b:person)-[f:knows]->(c:person) WHERE e.date < f.date  RETURN count(*)",
+			"execute": false,
+			"planIdx": 11
+		}
+	]
+}

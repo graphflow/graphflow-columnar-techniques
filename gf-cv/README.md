@@ -1,4 +1,4 @@
-### Configuration GF-RV (row storage, volcano-styled processing)
+### Configuration GF-CV (column storage, volcano-styled processing)
 
 Build steps
 -----------------

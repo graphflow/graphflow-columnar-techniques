@@ -1,0 +1,10 @@
+{
+	"queries" : [
+		{
+			"name": "q13.",
+			"query": "MATCH (t:title)-[hmi:hasMovieInfo]->(mi1:movieInfo1), (t:title)-[hc:hasCompany]->(c:company), (t:title)-[hk:hasKeyword]->(k:keyword) WHERE c.countryCode = '[us]' AND mi1.note CONTAINS 'internet' AND mi1.infoType = 16 RETURN t",
+			"execute": true,
+			"planIdx": -1
+		}	
+	]
+}

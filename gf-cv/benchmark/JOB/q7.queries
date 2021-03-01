@@ -1,0 +1,10 @@
+{
+	"queries" : [
+		{
+			"name": "q7.",
+			"query": "MATCH (t1:title)-[ilt:isLinkedTo]->(t2:title), (t1:title)-[hc:hasCast]->(n:name), (n:name)-[han:hasAltName]->(an:altName), (n:name)-[hpi:hasPersonInfo]->(pi:personInfo) WHERE pi.infoType = 19 RETURN t1",
+			"execute": true,
+			"planIdx": -1
+		}
+	]
+}

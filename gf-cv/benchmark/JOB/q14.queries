@@ -1,0 +1,10 @@
+{
+	"queries" : [
+		{
+			"name": "q14.",
+			"query": "MATCH (t:title)-[hmi1:hasMovieInfo]->(mi1:movieInfo1), (t:title)-[hk:hasKeyword]->(k:keyword), (t:title)-[hmi2:hasMovieInfo]->(mi2:movieInfo2) WHERE mi1.infoType = 9 AND mi2.infoType = 101 RETURN t",
+			"execute": true,
+			"planIdx": -1
+		}	
+	]
+}

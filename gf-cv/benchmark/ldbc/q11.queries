@@ -1,0 +1,25 @@
+{
+	"queries" : [
+		{
+			"name": "q6.",
+			"query": "MATCH (p0:person)-[:knows]->(p1:person), (p1:person)-[:knows]->(p3:person), (p3:person)-[eWorkAt:workAt]->(org:organisation), (org:organisation)-[:isLocatedIn]->(pl:place) WHERE p0 = 0 AND eWorkAt.year < 2016 AND pl.name = 'China' return p3, p3.fName, p3.lName, org.name",
+			"execute": true,
+			"planIdx": 8
+		},{
+			"name": "q6.",
+			"query": "MATCH (p0:person)-[:knows]->(p1:person), (p1:person)-[:knows]->(otherPerson:person), (otherPerson:person)-[eWorkAt:workAt]->(org:organisation), (org:organisation)-[:isLocatedIn]->(pl:place) WHERE p0 = 0 AND eWorkAt.year < 2016 return *",
+			"execute": false,
+			"planIdx": 2
+		},{
+			"name": "q6.",
+			"query": "MATCH (p0:person)-[:knows]->(p1:person), (p1:person)-[:knows]->(otherPerson:person), (otherPerson:person)-[eWorkAt:workAt]->(org:organisation), (org:organisation)-[:isLocatedIn]->(pl:place) WHERE p0 = 0 AND pl.name = 'China' return *",
+			"execute": false,
+			"planIdx": 2
+		},{
+			"name": "q6.",
+			"query": "MATCH (p0:person)-[:knows]->(p1:person), (p1:person)-[:knows]->(otherPerson:person), (otherPerson:person)-[eWorkAt:workAt]->(org:organisation), (org:organisation)-[:isLocatedIn]->(pl:place) WHERE p0 = 0 return *",
+			"execute": false,
+			"planIdx": 2
+		}
+	]
+}

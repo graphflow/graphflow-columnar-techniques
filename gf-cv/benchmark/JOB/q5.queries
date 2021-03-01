@@ -1,0 +1,10 @@
+{
+	"queries" : [
+		{
+			"name": "q5.",
+			"query": "MATCH (t:title)-[hc:hasCompany]->(c:company), (t:title)-[hmi:hasMovieInfo]->(mi1:movieInfo1) WHERE hc.companyType = 2 RETURN t",
+			"execute": true,
+			"planIdx": -1
+		}
+	]
+}

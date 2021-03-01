@@ -1,0 +1,4 @@
+id,name:STRING,orgCode:INT,mark:DOUBLE
+1,ABFsUni,325,3.7
+4,CsWork,934,4.1
+6,DEsWork,824,4.1
