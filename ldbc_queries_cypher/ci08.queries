@@ -1,0 +1,15 @@
+{
+	"queries" : [
+		{
+			"name": "q6.",
+			"query": "MATCH (pst:post)-[:hasCreator]->(p0:person), (cmt:comment)-[:replyOf]->(pst:post), (cmt:comment)-[:hasCreator]->(cmtAuthor:person) WHERE p0 = 0 return cmtAuthor, cmtAuthor.fName, cmtAuthor.lName, cmt.creationDate, cmt, cmt.content",
+			"execute": true,
+			"planIdx": 5
+		},{
+			"name": "q6.",
+			"query": "MATCH (pst:post)-[:hasCreator]->(p0:person), (cmt:comment)-[:replyOf]->(pst:post), (cmt:comment)-[:hasCreator]->(commentAuthor:person) return *",
+			"execute": false,
+			"planIdx": 4
+		}
+	]
+}

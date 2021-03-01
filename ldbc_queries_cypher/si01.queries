@@ -1,0 +1,15 @@
+{
+	"queries" : [
+		{
+			"name": "q6.",
+			"query": "MATCH (p:person)-[:isLocatedIn]->(pl:place) WHERE p = 0 return p.fName, p.lName, p.birthday, p.locationIP, p.browserUsed, p.gender, p.creationDate, pl",
+			"execute": true,
+			"planIdx": 0
+		},{
+			"name": "q6.",
+			"query": "MATCH (p0:person)-[:isLocatedIn]->(pl:place) return *",
+			"execute": false,
+			"planIdx": 0
+		}
+	]
+}
