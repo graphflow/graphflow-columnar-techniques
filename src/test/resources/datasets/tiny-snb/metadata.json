@@ -1,0 +1,30 @@
+{
+  "separator": ",",
+  "nodeFileDescriptions": [
+    {
+      "filename": "nodes/vPerson.csv",
+      "type": "PERSON"
+    },
+    {
+      "filename": "nodes/vOrganisation.csv",
+      "type": "ORGANISATION"
+    }
+  ],
+  "relFileDescriptions": [
+    {
+      "filename": "relationships/eKnows.csv",
+      "label": "KNOWS",
+      "cardinality": "n-n"
+    },
+    {
+      "filename": "relationships/eStudyAt.csv",
+      "label": "STUDYAT",
+      "cardinality": "n-1"
+    },
+    {
+      "filename": "relationships/eWorkAt.csv",
+      "label": "WORKAT",
+      "cardinality": "n-1"
+    }
+  ]
+}

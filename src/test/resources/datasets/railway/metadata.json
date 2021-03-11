@@ -1,0 +1,70 @@
+{
+  "separator": ",",
+  "nodeFileDescriptions": [
+    {
+      "filename": "nodes/vRegion.csv",
+      "type": "REGION"
+    },
+    {
+      "filename": "nodes/vRoute.csv",
+      "type": "ROUTE"
+    },
+    {
+      "filename": "nodes/vSegment.csv",
+      "type": "SEGMENT"
+    },
+    {
+      "filename": "nodes/vSemaphore.csv",
+      "type": "SEMAPHORE"
+    },
+    {
+      "filename": "nodes/vSensor.csv",
+      "type": "SENSOR"
+    },
+    {
+      "filename": "nodes/vSwitch.csv",
+      "type": "SWITCH"
+    },
+    {
+      "filename": "nodes/vSwitchPosition.csv",
+      "type": "SWITCH-POSITION"
+    }
+  ],
+  "relFileDescriptions": [
+    {
+      "filename": "relationships/eConnectsTo.csv",
+      "label": "SWITCH-POSITION",
+      "cardinality": "n-n"
+    },
+    {
+      "filename": "relationships/eEntry.csv",
+      "label": "ENTRY",
+      "cardinality": "n-n"
+    },
+    {
+      "filename": "relationships/eExit.csv",
+      "label": "EXIT",
+      "cardinality": "n-n"
+    },
+    {
+      "filename": "relationships/eFollows.csv",
+      "label": "FOLLOWS",
+      "cardinality": "n-n"
+    },
+    {
+      "filename": "relationships/eMonitoredBy.csv",
+      "label": "MONITEREDBY",
+      "cardinality": "n-n"
+    },
+    {
+      "filename": "relationships/eRequires.csv",
+      "label": "REQUIRES",
+      "cardinality": "n-n"
+    },
+    {
+      "filename": "relationships/eTarget.csv",
+      "label": "TARGET",
+      "cardinality": "n-n"
+    }
+  ]
+}
