@@ -1,0 +1,9 @@
+{
+	"name": "32A",
+	"qstr": "MATCH (t:title)-[hk:movie_keyword]->(k:keyword), (t:title)-[ilt:movie_link]->(t2:title) WHERE k.keyword ='character-name-in-title' RETURN t",
+	"qvo": [
+		"k",
+		"t",
+		"t2"
+	]
+}

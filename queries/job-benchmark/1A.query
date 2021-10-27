@@ -1,0 +1,9 @@
+{
+	"name": "1A",
+	"qstr": "MATCH (t:title)-[hc:movie_companies]->(c:company_name),(t:title)-[hmii:has_movie_info_idx]->(mii:movie_info_idx) WHERE hc.company_type_id = 2 AND mii.info_type_id = 112 and hc.note contains '(co-production)' RETURN t",
+	"qvo": [
+		"mii",
+		"t",
+		"c"
+	]
+}

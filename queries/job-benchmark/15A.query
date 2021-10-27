@@ -1,0 +1,10 @@
+{
+	"name": "15A",
+	"qstr": "MATCH (t:title)-[hmi:has_movie_info]->(mi:movie_info), (t:title)-[hc:movie_companies]->(c:company_name), (t:title)-[hk:movie_keyword]->(k:keyword) WHERE c.country_code = '[us]' and hc.note contains '(200' and hc.note contains '(worldwide)' and mi.info starts with 'USA:' AND mi.note CONTAINS 'internet' AND mi.info_type_id = 16 and t.production_year > 2000 RETURN t",
+	"qvo": [
+		"t",
+		"k",
+		"c",
+		"mi"
+	]
+}

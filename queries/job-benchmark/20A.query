@@ -1,0 +1,10 @@
+{
+	"name": "20A",
+	"qstr": "MATCH (t:title)-[hk:movie_keyword]->(k:keyword), (t:title)-[hcc:has_complete_cast]->(cc:complete_cast), (t:title)-[hci:cast_info]->(n:name) WHERE t.kind_id = 1 AND cc.subject_id = 1 AND cc.status_id >= 3 and k.keyword = 'superhero' and t.production_year > 1950 and hci.name contains 'Tony' and hci.name contains 'Stark' RETURN t",
+	"qvo": [
+		"k",
+		"t",
+		"cc",
+		"n"
+	]
+}

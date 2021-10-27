@@ -1,0 +1,10 @@
+{
+	"name": "9A",
+	"qstr": "MATCH (t:title)-[hc:movie_companies]->(c:company_name), (t:title)-[hcs:cast_info]->(n:name), (n:name)-[han:has_aka_name]->(an:aka_name) WHERE c.country_code = '[us]' AND n.gender = 'f' AND hcs.role_id = 2 AND hcs.note starts with '(voice' and hc.note contains '(USA)' and n.name contains 'Ang' and t.production_year >= 2005 and t.production_year <= 2015 RETURN t",
+	"qvo": [
+		"an",
+		"n",
+		"t",
+		"c"
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"name": "4A",
+	"qstr": "MATCH (t:title)-[hk:movie_keyword]->(k:keyword),(t:title)-[hmii:has_movie_info_idx]->(mii:movie_info_idx) WHERE k.keyword CONTAINS 'sequel' AND mii.info_type_id = 101 and mii.info > '5.0' and t.production_year > 2005 RETURN t",
+	"qvo": [
+		"k",
+		"t",
+		"mii"
+	]
+}

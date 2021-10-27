@@ -1,0 +1,10 @@
+{
+	"name": "14A",
+	"qstr": "MATCH (t:title)-[hmi:has_movie_info]->(mi:movie_info), (t:title)-[hk:movie_keyword]->(k:keyword), (t:title)-[hmii:has_movie_info_idx]->(mii:movie_info_idx) WHERE mi.info_type_id = 8 AND mii.info_type_id = 101 and k.keyword = 'murder' and t.kind_id = 1 and mi.info = 'USA' and mii.info < '8.5' and t.production_year > 2010 RETURN t",
+	"qvo": [
+		"k",
+		"t",
+		"mii",
+		"mi"
+	]
+}

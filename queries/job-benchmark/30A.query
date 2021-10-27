@@ -1,0 +1,12 @@
+{
+	"name": "30A",
+	"qstr": "MATCH (t:title)-[hmi:has_movie_info]->(mi:movie_info), (t:title)-[hmii:has_movie_info_idx]->(mii:movie_info_idx), (t:title)-[hk:movie_keyword]->(k:keyword), (t:title)-[hci:cast_info]->(n:name), (t:title)-[hcc:has_complete_cast]->(cc:complete_cast) WHERE cc.subject_id <= 2 and cc.status_id = 4 and mi.info_type_id = 3 and mii.info_type_id = 100 and k.keyword = 'murder' and mi.info = 'Horror' and n.gender = 'm' and t.production_year > 2000 RETURN t",
+	"qvo": [
+		"k",
+		"t",
+		"cc",
+		"mi",
+		"n",
+		"mii"
+	]
+}

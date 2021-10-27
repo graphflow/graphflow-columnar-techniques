@@ -1,0 +1,10 @@
+{
+	"name": "18A",
+	"qstr": "MATCH (t:title)-[hmi:has_movie_info]->(mi:movie_info), (t:title)-[hmii:has_movie_info_idx]->(mii:movie_info_idx),(t:title)-[hcs:cast_info]->(n:name) WHERE mi.info_type_id = 105 and mii.info_type_id = 100 and n.gender = 'm' and n.name contains 'Tim' RETURN t",
+	"qvo": [
+		"n",
+		"t",
+		"mi",
+		"mii"
+	]
+}

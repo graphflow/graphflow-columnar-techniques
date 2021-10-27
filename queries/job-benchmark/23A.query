@@ -1,0 +1,11 @@
+{
+	"name": "23A",
+	"qstr": "MATCH (t:title)-[hmi:has_movie_info]->(mi:movie_info), (t:title)-[hc:movie_companies]->(c:company_name), (t:title)-[hk:movie_keyword]->(k:keyword), (t:title)-[hcc:has_complete_cast]->(cc:complete_cast) WHERE c.country_code = '[us]' AND cc.status_id = 4 AND mi.info_type_id = 16 AND mi.note contains 'internet' and t.kind_id = 1 and mi.info starts with 'USA:' and t.production_year > 2000 RETURN t",
+	"qvo": [
+		"cc",
+		"t",
+		"c",
+		"mi",
+		"k"
+	]
+}

@@ -1,0 +1,12 @@
+{
+	"name": "28A",
+	"qstr": "MATCH (t:title)-[hmi:has_movie_info]->(mi:movie_info), (t:title)-[hmii:has_movie_info_idx]->(mii:movie_info_idx), (t:title)-[hk:movie_keyword]->(k:keyword), (t:title)-[hc:movie_companies]->(c:company_name), (t:title)-[hcc:has_complete_cast]->(cc:complete_cast) WHERE cc.subject_id = 2 and cc.status_id <> 4 and c.country_code <> '[us]' and mi.info_type_id = 8 and mii.info_type_id = 101 and k.keyword = 'murder' and t.kind_id = 1 and hc.note contains '(200' and mi.info = 'Germany' and mii.info < '8.5' and t.production_year > 2000 RETURN t",
+	"qvo": [
+		"k",
+		"t",
+		"cc",
+		"mii",
+		"mi",
+		"c"
+	]
+}

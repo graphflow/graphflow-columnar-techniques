@@ -1,0 +1,11 @@
+{
+	"name": "26A",
+	"qstr": "MATCH (t:title)-[hmii:has_movie_info_idx]->(mii:movie_info_idx), (t:title)-[hk:movie_keyword]->(k:keyword), (t:title)-[hcs:cast_info]->(n:name), (t:title)-[hcc:has_complete_cast]->(cc:complete_cast) WHERE cc.subject_id = 1 and cc.status_id >= 3 and hcs.name contains 'man' and mii.info_type_id = 101 and k.keyword = 'superhero' and t.kind_id = 1 and mii.info > '7.0' and t.production_year > 2000 RETURN t",
+	"qvo": [
+		"k",
+		"t",
+		"mii",
+		"n",
+		"cc"
+	]
+}

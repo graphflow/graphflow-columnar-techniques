@@ -1,0 +1,11 @@
+{
+	"name": "21A",
+	"qstr": "MATCH (t:title)-[hmi:has_movie_info]->(mi:movie_info), (t:title)-[hc:movie_companies]->(c:company_name), (t:title)-[hk:movie_keyword]->(k:keyword), (t:title)-[ilt:movie_link]->(t2:title) WHERE c.country_code <> '[pl]' AND c.name CONTAINS 'Film' AND hc.company_type_id = 2 AND k.keyword CONTAINS 'sequel' AND ilt.link_type_id <= 2 and mi.info = 'Germany' and t.production_year >= 1950 and t.production_year <= 2000 RETURN t",
+	"qvo": [
+		"k",
+		"t",
+		"t2",
+		"c",
+		"mi"
+	]
+}

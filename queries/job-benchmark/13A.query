@@ -1,0 +1,10 @@
+{
+	"name": "13A",
+	"qstr": "MATCH (t:title)-[hmi:has_movie_info]->(mi:movie_info), (t:title)-[hc:movie_companies]->(c:company_name), (t:title)-[hmii:has_movie_info_idx]->(mii:movie_info_idx) WHERE c.country_code = '[de]' and t.kind_id = 1 and hc.company_type_id = 2 AND mi.info_type_id = 16 AND mii.info_type_id = 101 RETURN t",
+	"qvo": [
+		"c",
+		"t",
+		"mii",
+		"mi"
+	]
+}

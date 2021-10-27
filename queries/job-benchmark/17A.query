@@ -1,0 +1,10 @@
+{
+	"name": "17A",
+	"qstr": "MATCH (t:title)-[hcs:cast_info]->(n:name), (t:title)-[hc:movie_companies]->(c:company_name), (t:title)-[hk:movie_keyword]->(k:keyword) WHERE c.country_code ='[us]' and  k.keyword ='character-name-in-title' and n.name starts with 'B' RETURN t",
+	"qvo": [
+		"k",
+		"t",
+		"c",
+		"n"
+	]
+}

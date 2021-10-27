@@ -1,0 +1,12 @@
+{
+	"name": "33A",
+	"qstr": "MATCH (t:title)-[ilt:movie_link]->(t2:title), (t:title)-[hmii:has_movie_info_idx]->(mii:movie_info_idx), (t2:title)-[hmii2:has_movie_info_idx]->(mii2:movie_info_idx), (t:title)-[hc:movie_companies]->(c:company_name), (t2:title)-[hc2:movie_companies]->(c2:company_name) WHERE c.country_code = '[us]' and mii.info_type_id = 101 and mii2.info_type_id = 101 and t.kind_id = 2 and t2.kind_id = 2 and ilt.link_type_id <= 2 and mii2.info < '3.0' and t2.production_year >= 2005 and t2.production_year <= 2008 RETURN t",
+	"qvo": [
+		"mii",
+		"t",
+		"t2",
+		"mii2",
+		"c",
+		"c2"
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"name": "2A",
+	"qstr": "MATCH (t:title)-[hc:movie_companies]->(c:company_name),(t:title)-[hk:movie_keyword]->(k:keyword) WHERE k.keyword = 'character-name-in-title' and c.country_code ='[de]' RETURN t",
+	"qvo": [
+		"k",
+		"t",
+		"c"
+	]
+}

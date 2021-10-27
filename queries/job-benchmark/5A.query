@@ -1,0 +1,9 @@
+{
+	"name": "5A",
+	"qstr": "MATCH (t:title)-[hc:movie_companies]->(c:company_name),(t:title)-[hmi:has_movie_info]->(mi:movie_info) WHERE hc.company_type_id = 2 AND hc.note contains '(theatrical)' AND hc.note contains '(France)' AND t.production_year > 2005 RETURN t",
+	"qvo": [
+		"t",
+		"c",
+		"mi"
+	]
+}

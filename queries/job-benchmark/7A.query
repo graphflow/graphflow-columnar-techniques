@@ -1,0 +1,11 @@
+{
+	"name": "7A",
+	"qstr": "MATCH (t:title)-[ilt:movie_link]->(t2:title), (t:title)-[hc:cast_info]->(n:name),(n:name)-[han:has_aka_name]->(an:aka_name),(n:name)-[hpi:has_person_info]->(pi:person_info) WHERE pi.info_type_id = 19 and an.name contains 'a' and n.name_pcode_cf >= 'A' and n.name_pcode_cf <= 'F' and n.gender = 'm' and pi.note = 'Volker Boehm' and t.production_year >= 1980 and t.production_year <= 1995 and ilt.link_type_id = 9 RETURN t",
+	"qvo": [
+		"t2",
+		"t",
+		"n",
+		"an",
+		"pi"
+	]
+}

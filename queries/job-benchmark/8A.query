@@ -1,0 +1,10 @@
+{
+	"name": "8A",
+	"qstr": "MATCH (t:title)-[hc:movie_companies]->(c:company_name), (t:title)-[hci:cast_info]->(n:name), (n:name)-[han:has_aka_name]->(an:aka_name) WHERE hci.note ='(voice: English version)' AND c.country_code ='[jp]' AND hc.note contains '(Japan)' AND n.name contains 'Yo' and hci.role_id = 2 RETURN t",
+	"qvo": [
+		"c",
+		"t",
+		"n",
+		"an"
+	]
+}

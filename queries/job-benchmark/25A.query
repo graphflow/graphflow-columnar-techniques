@@ -1,0 +1,11 @@
+{
+	"name": "25A",
+	"qstr": "MATCH (t:title)-[hmi:has_movie_info]->(mi:movie_info), (t:title)-[hmii:has_movie_info_idx]->(mii:movie_info_idx), (t:title)-[hk:movie_keyword]->(k:keyword), (t:title)-[hci:cast_info]->(n:name) WHERE  mi.info_type_id = 3 and mii.info_type_id = 100 and k.keyword = 'murder' and mi.info = 'Horror' and n.gender = 'm' RETURN t",
+	"qvo": [
+		"k",
+		"t",
+		"mi",
+		"n",
+		"mii"
+	]
+}

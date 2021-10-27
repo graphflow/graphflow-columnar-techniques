@@ -1,0 +1,11 @@
+{
+	"name": "19A",
+	"qstr": "MATCH (t:title)-[hmi:has_movie_info]->(mi:movie_info), (t:title)-[hc:movie_companies]->(c:company_name), (t:title)-[hcs:cast_info]->(n:name), (n:name)-[han:has_aka_name]->(an:aka_name) WHERE c.country_code = '[us]' AND n.gender = 'f' AND mi.info_type_id = 16 AND hcs.role_id = 2 and hcs.note starts with '(voice' and hc.note contains '(USA)' and mi.info starts with 'Japan:' and n.name contains 'Ang' and t.production_year >= 2005 and t.production_year <= 2009 RETURN t",
+	"qvo": [
+		"an",
+		"n",
+		"t",
+		"mi",
+		"c"
+	]
+}

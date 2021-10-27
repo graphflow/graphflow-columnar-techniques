@@ -1,0 +1,14 @@
+{
+	"name": "29A",
+	"qstr": "MATCH (t:title)-[hmi:has_movie_info]->(mi:movie_info), (t:title)-[hk:movie_keyword]->(k:keyword), (t:title)-[hcc:has_complete_cast]->(cc:complete_cast), (t:title)-[hci:cast_info]->(n:name), (n:name)-[han:has_aka_name]->(an:aka_name),(n:name)-[hpi:has_person_info]->(pi:person_info), (t:title)-[hc:movie_companies]->(c:company_name) WHERE cc.subject_id =2 and cc.status_id = 4 and hci.name = 'Queen' and hci.note contains '(voice' and c.country_code ='[us]' and mi.info_type_id = 16 and pi.info_type_id = 17 and k.keyword = 'computer-animation' and mi.info starts with 'Japan:' and n.gender = 'f' and n.name contains 'An' and hci.role_id = 2 and t.title = 'Shrek 2' and t.production_year >= 2000 AND t.production_year <= 2010 RETURN t",
+	"qvo": [
+		"cc",
+		"t",
+		"n",
+		"mi",
+		"k",
+		"c",
+		"an",
+		"pi"
+	]
+}

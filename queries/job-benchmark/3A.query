@@ -1,0 +1,9 @@
+{
+	"name": "3A",
+	"qstr": "MATCH (t:title)-[hk:movie_keyword]->(k:keyword), (t:title)-[hmi:has_movie_info]->(mi:movie_info) WHERE k.keyword CONTAINS 'sequel' AND mi.info = 'Sweden' AND t.production_year > 2005 RETURN t",
+	"qvo": [
+		"k",
+		"t",
+		"mi"
+	]
+}

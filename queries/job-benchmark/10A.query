@@ -1,0 +1,9 @@
+{
+	"name": "10A",
+	"qstr": "MATCH (t:title)-[hc:movie_companies]->(c:company_name), (t:title)-[hcs:cast_info]->(n:name) WHERE hcs.note contains '(voice)' and hcs.note contains '(uncredited)' and c.country_code = '[ru]' AND hcs.role_id = 1 AND t.production_year > 2005 RETURN t",
+	"qvo": [
+		"c",
+		"t",
+		"n"
+	]
+}

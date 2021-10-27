@@ -1,0 +1,12 @@
+{
+	"name": "27A",
+	"qstr": "MATCH (t:title)-[hmi:has_movie_info]->(mi:movie_info), (t:title)-[hk:movie_keyword]->(k:keyword), (t:title)-[ilt:movie_link]->(t2:title), (t:title)-[hc:movie_companies]->(c:company_name), (t:title)-[hcc:has_complete_cast]->(cc:complete_cast) WHERE cc.subject_id <= 2 and cc.status_id = 3 and c.country_code <> '[pl]' and c.name contains 'Film' and hc.company_type_id = 2 and k.keyword ='sequel' and ilt.link_type_id <= 2 and mi.info = 'Sweden' and t.production_year >= 1950 AND t.production_year <= 2000 RETURN t",
+	"qvo": [
+		"k",
+		"t",
+		"t2",
+		"cc",
+		"mi",
+		"c"
+	]
+}
