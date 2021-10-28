@@ -1,0 +1,9 @@
+{
+	"name": "<query_name>",
+	"qstr": "<cypher_query_string>",
+	"qvo": [
+		<node_variable_1>,
+		<node_variable_2>,
+		...
+	]
+}
