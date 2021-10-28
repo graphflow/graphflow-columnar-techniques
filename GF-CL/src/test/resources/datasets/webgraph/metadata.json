@@ -1,0 +1,16 @@
+{
+  "separator": ",",
+  "nodeFileDescriptions": [
+    {
+      "filename": "nodes/vWebpages.csv",
+      "type": "WEBPAGE"
+    }
+  ],
+  "relFileDescriptions": [
+    {
+      "filename": "relationships/eLinks.csv",
+      "label": "LINK",
+      "cardinality": "n-n"
+    }
+  ]
+}
