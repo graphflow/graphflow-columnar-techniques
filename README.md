@@ -55,8 +55,8 @@ We test our system on 2 leading benchmarks: JOB and LDBC SNB. Since Graphflow do
 - Poster [[link](https://drive.google.com/file/d/1c0wjGMgqGMdavt8_xvlf_bEmrtPvbvYF/view?usp=sharing)]
 
 ## Contact 
-[Pranjal Gupta](https://https://www.linkedin.com/in/g31pranjal/)
-
+[Pranjal Gupta](https://https://www.linkedin.com/in/g31pranjal/)   
+[Amine Mhedhbi](mailto:m.amine.mhedhbi@gmail.com)
 
 ## License
 
