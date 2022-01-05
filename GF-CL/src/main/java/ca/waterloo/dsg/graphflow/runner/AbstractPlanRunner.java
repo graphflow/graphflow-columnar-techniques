@@ -31,7 +31,7 @@ public class AbstractPlanRunner extends AbstractRunner {
             joiner.add(String.format("query name     : %s", query.name));
             joiner.add(String.format("cypher query   : %s", query.qstr));
             joiner.add(String.format("QVO            : %s", query.printQVO()));
-            joiner.add(String.format("execution time : %.3f ms", execTime));
+            joiner.add(String.format("execution time : %.3f sec", execTime));
             joiner.add(String.format("#tuples        : %d", numTuples));
             return joiner.toString();
         }
